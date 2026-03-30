@@ -171,3 +171,4 @@ Any exception to this standard must be:
 * Penetration testing and automated scans will test validation effectiveness.  
 * Non-compliance may result in deployment gates being blocked until remediated.
 
+This standard provides a robust, actionable foundation based on OWASP best practices. For language-specific implementations (Java, .NET, Python, Node.js, etc.), refer to framework documentation and the full OWASP Input Validation Cheat Sheet.
