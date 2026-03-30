@@ -26,6 +26,15 @@ This standard is based on the **OWASP Input Validation Cheat Sheet** (latest ver
 * Proper authentication and authorization  
 * Secure file handling and other domain-specific controls
 
+### Sanitization vs. Validation
+
+* Validation checks if input conforms to rules and rejects invalid data.
+* Sanitization cleans or transforms data (e.g., trimming, normalizing).
+* For rich/HTML content: Use a dedicated HTML sanitization library (see OWASP XSS Prevention Cheat Sheet). Avoid custom sanitizers.
+* Output Encoding/Escaping remains the primary defense for XSS and similar issues. Always encode data contextually when rendering (HTML, JavaScript, CSS, URLs, etc.).
+
+* Never rely solely on sanitization for security-critical fields.
+
 ### **2\. Scope**
 
 This standard applies to **all** externally supplied or untrusted data, including but not limited to:
