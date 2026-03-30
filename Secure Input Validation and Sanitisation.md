@@ -139,9 +139,10 @@ Follow RFC standards with normalization (lowercase domain part). Use a reputable
 
 ### **7\. Integration with SecDevOps**
 
-* **Shift-Left**: Include input validation rules in threat modeling, API design reviews, and code reviews.  
-* **Automation**: Enforce schema validation and unit tests in CI/CD pipelines. Fail builds on critical validation gaps where possible.  
-* **Testing**: Include negative test cases (malformed, oversized, malicious payloads) in automated and manual testing.  
+* **Shift-Left**: Include input validation rules in threat modeling, API design reviews, and code reviews. Enforce validation rules in API specifications (OpenAPI/Swagger with schemas), code reviews, and threat modeling.
+* **Automation**: Enforce schema validation and unit tests in CI/CD pipelines. Fail builds on critical validation gaps where possible.  Include validation checks in SAST, DAST, and unit/integration tests.
+* **Testing**: Include negative test cases (malformed, oversized, malicious payloads) in automated and manual testing.
+* **API-Specific**: Validate all request elements (body, params, headers). Use strong types in OpenAPI definitions for implicit validation. Set request size limits (reject with 413).
 * **Monitoring**: Feed validation failure logs into SIEM for anomaly detection.
 
 ### **8\. Exceptions and Risk Acceptance**
