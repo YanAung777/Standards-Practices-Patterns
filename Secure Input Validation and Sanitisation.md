@@ -172,3 +172,15 @@ Any exception to this standard must be:
 * Non-compliance may result in deployment gates being blocked until remediated.
 
 This standard provides a robust, actionable foundation based on OWASP best practices. For language-specific implementations (Java, .NET, Python, Node.js, etc.), refer to framework documentation and the full OWASP Input Validation Cheat Sheet.
+
+### 
+
+Enforcing them as global WAF blocks would likely generate significant false positives, especially in unstructured public comments or rich text. This is consistent with OWASP CRS tuning guidance, where anomaly-based rules (e.g., special character counts, SQL/XSS heuristics involving hyphens/parentheses)
+
+Null bytes (e.g., %00 or \x00): These are almost never legitimate in user-submitted text. They are a classic indicator of malformed or malicious input (e.g., attempts to truncate strings, poison null byte attacks, or bypass filters in older parsing logic). Blocking them at the WAF layer is a strong, low-false-positive control. This matches common rule implementations (e.g., OWASP CRS rule 920270 for invalid null characters, Azure WAF/ModSecurity equivalents, and Adobe's recommended NULLBYTE filters), where null bytes are treated as malformed/malicious by default.
+
+Non-printable control characters (e.g., ASCII 0-31 except perhaps \t, \n, \r in limited contexts): These similarly have very limited legitimate use in free-text user input. They often signal attempts at obfuscation, protocol abuse, or injection. Blocking them is standard (e.g., OWASP CRS 920271 for non-printable characters, often set to critical severity). In a rich text field where HTML is already stripped server-side, there's minimal business justification for allowing them, and the risk reduction outweighs any rare edge cases.
+
+to handle these via field-specific UI constraints (e.g., client-side) is the best approach.
+
+Where anomaly-based rules (e.g., special character counts, SQL/XSS heuristics involving hyphens/parentheses) frequently require exclusions or downgrading to detection-only in real-world deployments to avoid blocking legitimate traffic.
