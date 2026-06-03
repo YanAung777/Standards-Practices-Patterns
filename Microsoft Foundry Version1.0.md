@@ -58,9 +58,7 @@ Adopting Microsoft Foundry within the Azure ecosystem transforms the API migrati
 Azure API Management (APIM) as an AI Gateway solves this. It sits between your applications and your Foundry model deployments as an intelligent proxy enforcing policies, routing traffic, managing costs, and providing unified observability across your entire AI fleet.  
 ![][image4]
 
-### ---
-
-**Benefits & Risk Mitigation**
+### **Benefits & Risk Mitigation**
 
 **Benefits**:
 
@@ -100,9 +98,7 @@ Microsoft Foundry is the unified PaaS for building, grounding, optimizing, and g
 * Expand the existing POC (AI-generated C\# in Functions \+ transformations) into repeatable agentic pipelines in Foundry.  
 * Prompt engineering templates stored in Foundry for consistency (e.g., "Refactor this ESQL to Azure Functions C\# while maintaining exact behavioral parity with structures").
 
-## ---
-
-Secure-by-Design Framework
+## Secure-by-Design Framework
 
 Security is embedded at every layer using Microsoft’s Zero Trust and Well-Architected Framework principles.
 
@@ -138,9 +134,7 @@ Security is embedded at every layer using Microsoft’s Zero Trust and Well-Arch
 * Audit logging to Azure Monitor \+ Log Analytics.  
 * Automated compliance reporting.
 
-## ---
-
-Development & Testing Framework
+## Development & Testing Framework
 
 ### **AI Refactoring Pipeline**:
 
@@ -161,11 +155,8 @@ Development & Testing Framework
 * **Governance**: Azure Policy initiatives, Landing Zones per Cloud Adoption Framework (CAF).  
 * **Future-Proofing**: Modular design allows easy swapping of models in Foundry and extension to full agentic APIs (e.g., intelligent routing or enrichment).
 
-## 
 
-## ---
-
-Cost Management & FinOps Framework
+## Cost Management & FinOps Framework
 
 Effective cost governance is essential for sustainable AI adoption at enterprise scale. This initiative leverages Microsoft’s FinOps capabilities to ensure transparency, optimization, and predictable spending across Foundry usage during both migration acceleration and runtime operations.
 
@@ -196,9 +187,7 @@ Effective cost governance is essential for sustainable AI adoption at enterprise
 * Measure reduction in development hours and technical debt.  
 * Target: 50-70% reduction in refactoring effort for ESQL/Maps transformations within the first 6 months.
 
-## ---
-
-Observability, Monitoring & Alerting Strategy
+## Observability, Monitoring & Alerting Strategy
 
 Comprehensive observability is critical to maintain reliability, detect anomalies early, and support Human-in-the-Loop processes.
 
@@ -228,9 +217,7 @@ Comprehensive observability is critical to maintain reliability, detect anomalie
 
 This layered observability approach ensures proactive issue resolution and continuous improvement of AI-generated assets.
 
-## ---
-
-Business Continuity, Disaster Recovery & High Availability
+## Business Continuity, Disaster Recovery & High Availability
 
 The architecture is designed for high resilience to support mission-critical API operations post-migration.
 
@@ -256,7 +243,7 @@ The architecture is designed for high resilience to support mission-critical API
 * All resources deployed within approved Azure regions to meet data sovereignty requirements.  
 * Private endpoints and Managed VNET ensure traffic remains within the corporate boundary.
 
----
+
 
 ## Scalability & Performance Architecture
 
@@ -281,9 +268,7 @@ The solution is engineered to scale efficiently from the current POC to enterpri
 * From 10–20 APIs in pilot → 200+ APIs through reusable agent templates and modular domain-driven design.  
 * Future extension to full agentic APIs with minimal additional infrastructure cost.
 
-## ---
-
-Azure API Management as an AI Gateway for Microsoft Foundry
+## Azure API Management as an AI Gateway for Microsoft Foundry
 
 The following section describes the guidance on configuring APIM as the central AI Gateway for Microsoft Foundry. This is one of the most critical pieces for achieving secure-by-design, governed, and scalable AI usage during your API migration and refactoring.
 
@@ -306,9 +291,7 @@ To operationalise secure and governed access to Foundry models, Azure API Manage
 
 This pattern ensures **behavioral parity testing** and AI-generated code deployments remain compliant while providing fine-grained governance for refactoring pipelines and runtime intelligent APIs.
 
-## ---
-
-Establishing a Microsoft Foundry Project with Enterprise Configuration
+## Establishing a Microsoft Foundry Project with Enterprise Configuration
 
 Enterprise-ready guide to set up a **Microsoft Foundry Project** aligned with the API migration initiative (refactoring ESQL/Maps to Azure Functions \+ APIM, using Foundry for AI-assisted code generation and transformations).
 
@@ -415,9 +398,7 @@ Apply these settings for **secure-by-design**:
 * Run a sample refactoring task with Human-in-the-Loop approval.  
 * Check audit logs and cost tracking.
 
-## ---
-
-Rolling Out Enterprise Governance Controls for Microsoft Foundry
+## Rolling Out Enterprise Governance Controls for Microsoft Foundry
 
 This guide provides a structured, phased approach to roll out enterprise governance controls for your Foundry Project. It aligns with your API migration (ESQL/Maps → Azure Functions \+ APIM), AI-assisted refactoring, human-in-the-loop processes, and secure-by-design requirements using the Microsoft ecosystem (Azure Policy, Purview, Defender for Cloud, APIM AI Gateway, etc.).
 
@@ -526,9 +507,7 @@ This ensures **behavioral parity testing**, code generation quality, data protec
   * No high-severity incidents in the first 30 days.  
 * **Documentation**: Update your architecture paper with this rollout plan and maintain a Runbook.
 
-## ---
-
-Target Operating Model & RACI
+## Target Operating Model & RACI
 
 A clear operating model is essential to sustain the Microsoft Foundry platform and ensure effective governance, delivery velocity, and accountability across the organization.
 
@@ -563,9 +542,7 @@ R \= Responsible, A \= Accountable, C \= Consulted, I \= Informed
 
 This model ensures clear accountability while enabling delivery teams to move fast within a governed, secure platform.
 
-## ---
-
-Success Metrics, KPIs & Exit Criteria
+## Success Metrics, KPIs & Exit Criteria
 
 To objectively measure the success of the Microsoft Foundry API modernization program, the following metrics and KPIs have been defined.
 
@@ -596,11 +573,7 @@ Exit Criteria for Migration Phases
 
 Regular monthly reviews against these metrics will be conducted by the AI Governance Board, with adjustments to models, policies, or processes as required.
 
-## 
-
-## ---
-
-AI Governance Board – Role and Responsibilities
+## AI Governance Board – Role and Responsibilities
 
 The **AI Governance Board** is the central decision-making and oversight body responsible for ensuring responsible, secure, and compliant use of Microsoft Foundry and generative AI capabilities across the enterprise.
 
@@ -644,9 +617,7 @@ The Board has authority to:
 * Suspend high-risk AI capabilities.  
 * Define mandatory controls (e.g., mandatory Human-in-the-Loop for code generation).
 
-## ---
-
-Azure Policy Definitions for Microsoft Foundry & AI Workloads
+## Azure Policy Definitions for Microsoft Foundry & AI Workloads
 
 **Built-in** recommended Azure Policy definitions/initiatives relevant to your enterprise Foundry rollout. It supports secure AI-assisted API refactoring (ESQL/Maps → C\# Functions \+ APIM), data protection for Canonical Models, model governance, networking isolation, Responsible AI, and compliance.
 
