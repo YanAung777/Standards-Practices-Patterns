@@ -1,5 +1,4 @@
 **Author**: Yan Aung Title: Chief Architect  
-**Company**: SaaS Technologies Ltd  
 **Document Title**: AI Platform \- Reference Architecture  
 ---
 
