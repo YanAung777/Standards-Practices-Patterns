@@ -690,7 +690,7 @@ Grounding is the process of providing relevant, verified context to the large la
 
 # Why Grounding is Critical in API Migration Use Case
 
-In your scenario (**migrating IBM IIB ESQL/Maps to Azure Functions + APIM**), Foundry IQ is used to:
+In your scenario (**migrating ESQL/Maps to Azure Functions + APIM**), Foundry IQ is used to:
 
 ## Ingest trusted knowledge
 
