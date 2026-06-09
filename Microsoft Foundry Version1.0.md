@@ -1,4 +1,4 @@
-**Author**: Yan Aung Title: Chief Architect  
+**Author**: Yan Aung Title: Principal Consultant/Architect  
 **Document Title**: AI Platform \- Reference Architecture  
 ---
 
